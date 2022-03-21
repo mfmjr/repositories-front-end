@@ -88,7 +88,7 @@ const againButton = function ()
     document.querySelector('body').style.backgroundColor = '#222';    
 }
 
-/* Events listenners. */ 
+/* Events list. */ 
 
 // Again button
 document.querySelector('.again').addEventListener('click', againButton);
