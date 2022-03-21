@@ -48,8 +48,7 @@ const pressRoll = function()
         {
             // Add dice to current score
             currentScore += numberDice; // currentScore = currentScore + nubmerDice        
-            document.getElementById(`current--${activePlayer}`).textContent = currentScore;       
-
+            document.getElementById(`current--${activePlayer}`).textContent = currentScore;  
         }
         else 
         {
@@ -59,22 +58,22 @@ const pressRoll = function()
     }
 }
 
+// Function for press button Holl
 const pushHoll = function()
 {
     if (playing == true) 
     {
+        // 1. Sum of scores
         scores[activePlayer] += currentScore; // scores[1] = scores[1] + currentScore        
         document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
 
         // 2. Check if players scores is >= 100
         if(scores[activePlayer] >= 10) 
         {   
-            playing = false;
             // Finish the game
+            playing = false;
             document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
             document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
-            
-            
         }
         else
         {   
