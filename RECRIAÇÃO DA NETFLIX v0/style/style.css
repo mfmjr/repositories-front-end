@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* Criação de variáveis dentro do CSS! */
+:root
+{
+ --vermelho: #E50914;
+ --preto: #141414;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Os elementos irão se espremer dentro da caixa */    
+}
+
+/* Início do elemento Base */
+body
+{
+    background-color: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container 
+{
+    display: flex; /* Alinhar os menus na mesma linha da logo NETFLIX. */
+    flex-direction: row;
+    align-items: center; /* Centralizar os menus na mesma linha da logo */
+    justify-content: space-between; /* Deixar a logo e o menu de item em cada extremidade. */
+    
+}
+
+header .logo
+{
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+}
+
+header nav a
+{
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header nav a:hover
+{
+    color: #fff;
+}
+/* Final do elemento Base */
+
+/* Filme Principal */
+.filme_principal
+{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) 100%), url("../img/chuck.jpg");  /* O degrade ajuda a melhorar a visualização da sinopse.*/  
+    height:600px;
+    background-size: cover; /* Imagem em todo tamanho da caixa. */
+
+    display: flex; /* Alinhar os botão  */
+    flex-direction: column; /* Direção vertical. */
+    justify-content: center;
+    align-items: flex-start;
+
+    
+}
+
+.sinopse
+{
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+
+.titulo
+{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.botao
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor:pointer;  /* Ao passar o mouse por cima do botão, o usuário saber que é um botão clicável */
+
+    transition: .3s ease all; /* Animação de suavidade ao passar o mouse por cima do botão. */
+
+}
+
+.botao:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.botao i
+{
+    margin-right: 8px;
+}
+
+.container
+{
+    margin-left: 20px;
+}
+
+.filme_principal .container
+{
+    width: 70%;
+}
+
+.catalogos
+{
+    width:100%;
+    height: 100%;
+    display: block;
+    
+}
+
+.filme_principal
+{
+    margin-top: 5px;
+}
+
+h2
+{
+    padding: auto;
+    margin: 10px 1px;
+}
+
